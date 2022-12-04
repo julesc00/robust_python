@@ -33,3 +33,21 @@ Definition:
 - Changing values based on time zones.
 - Being able to control the format of strings.
 - Finding what weekday it is.
+
+## Duck Typing
+> If it walks like a duck and quacks like a duck, then it must be a duck.
+> 
+> ***Duck typing*** is the ability to use objects and entities in a programming language as long
+> as they adhere to some interface.
+> 
+> As long as a type supports the variables and methods used by a function, you can use that type
+> in that function freely.
+
+**Note:**
+When updating code, it's not simple enough to just make the changes; we must look at all calling code  
+and make sure that the types passed into your function satisfy the new changes as well.
+
+> It might be best to reword the idiom earlier:
+> If it walks like a duck and quacks like a duck, and you are looking for things that walk
+> and quack like ducks, then you can treat it as if it were a duck.
+

@@ -46,7 +46,6 @@ def log_time_closed(time: datetime.datetime):
 def close_kitchen_if_past_cutoff_time(point_in_time):
     if point_in_time >= closing_time():
         close_kitchen()
-        log_time_closed(point_in_time)
 
 
 # Better approach
@@ -54,3 +53,11 @@ def close_kitchen_if_past_cutoff_time_v2(point_in_time: datetime.datetime):
     if point_in_time >= closing_time():
         close_kitchen()
         log_time_closed(point_in_time)
+
+
+a: int = 5
+print(type(a))
+
+"""
+End of section
+"""
