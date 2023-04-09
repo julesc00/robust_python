@@ -1,4 +1,4 @@
-# Notes from book Robust Python by Patrick Viafore   
+# Notes from book Robust Python by Patrick Viafore
 
 
 # Chapter 1: ***Introduction to Robust Python***
@@ -23,16 +23,16 @@
     (cookbook_name, author, page, count).
 
 **Set**
-- An iterable collection that contains no duplicates. You cannot rely on ordering of elements. The 
+- An iterable collection that contains no duplicates. You cannot rely on ordering of elements. The
   ingredients in a cookbook might be stored in a set.
 
 **Dictionary**
-- A mapping from keys to values. Keys are unique across the dictionary. Dictionaries are typically 
+- A mapping from keys to values. Keys are unique across the dictionary. Dictionaries are typically
     iterated over, or indexed into using dynamic keys. A cookbook's index is a great example of a
     key to value mapping (ei. from topic to page number).
 
 ### Special collection types that are expressive in communicating to the future:
-**frozenset**  
+**frozenset**
 - A set that is immutable
 
 **OrderedDict**
@@ -41,11 +41,11 @@
 
 **defaultdict**
 - A dictionary that provides a default value if the key is missing. for example:
-```from collections import defaultdict  
- def create_author_count_mapping(cookbooks: List([Cookbook])):  
-     counter = defaultdict(lambda: 0)  
-     for cookbook in cookbooks:  
-         counter[cookbook.author] += 1  
+```from collections import defaultdict
+ def create_author_count_mapping(cookbooks: List([Cookbook])):
+     counter = defaultdict(lambda: 0)
+     for cookbook in cookbooks:
+         counter[cookbook.author] += 1
      return counter
    ```
 
@@ -53,7 +53,7 @@
 **for ***loops*****
 - for loops are used for iterating over each element in a collection or range and performing an action/side effect.
 ```
-for cookbook in cookbooks:  
+for cookbook in cookbooks:
     print(cookbook)
 ```
 ** while ***loops*****
@@ -63,9 +63,9 @@ while is_cookbook_open(cookbook):
     narrate(cookbook)
 ```
 **Comprehensions**
-- Comprehensions are used for transforming one collection into another (normally, this does not have 
-    side effects, specially if the comprehension is lazy).  
-`authors = [cookbook.author for cookbook in cookbooks]`  
+- Comprehensions are used for transforming one collection into another (normally, this does not have
+    side effects, specially if the comprehension is lazy).
+`authors = [cookbook.author for cookbook in cookbooks]`
 
 **Recursion**
 - Recursion is used when the substructure of a collection is identical to the structure of a collection
